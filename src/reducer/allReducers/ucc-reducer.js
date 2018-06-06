@@ -12,6 +12,7 @@ export default function ucc(state =  {
   jpushAppkey: "f7431914a57c577ecc7a860a",
   jpushSecret: "e48ab8d92dbd7f0253a1ad44",
   jpushProduction: true,
+  plaintext: false
 },action){
 	switch(action.type){
 		case "UCC_JPUSHAPPKEY":
@@ -67,6 +68,11 @@ export default function ucc(state =  {
     case "UCC_BROWSERMERGE":
       state = Object.assign({}, state, {
         browserMerge: action.value
+      })
+      break
+    case "UCC_PLAINTEXT":
+      state = Object.assign({}, state, {
+        plaintext: action.value
       })
       break
 		// this is required

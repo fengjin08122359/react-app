@@ -16,6 +16,7 @@ export default class Ucc extends Component{
       authKey,
       webSocket,
       redis,
+      plaintext,
       jpushAppkey,
       jpushSecret,
       jpushProduction,
@@ -25,6 +26,7 @@ export default class Ucc extends Component{
       handelAuthKey,
       handelWebSocket,
       handelRedis,
+      handelPlaintext,
       handelBrowserMerge,
       handelJpushAppKey,
       handelJpushSecret,
@@ -38,6 +40,7 @@ export default class Ucc extends Component{
         <Checkbox checked={webSocket} onChange={handelWebSocket}>启用webSocket</Checkbox>
         <Checkbox checked={redis} onChange={handelRedis}>启用访客监控</Checkbox>
         <Checkbox checked={browserMerge} onChange={handelBrowserMerge}>启用对话合并</Checkbox>
+        <Checkbox checked={plaintext} onChange={handelPlaintext}>启用纯文本</Checkbox>
         <Input prepend="内部调用地址" onInput={handelDomain} value={domain} placeholder="" />
         <Input  prepend="外部调用地址" onInput={handelWebPage} value={webPage} placeholder="" />
         <Input  prepend="authKey" onInput={handelAuthKey} value={authKey} placeholder="" />

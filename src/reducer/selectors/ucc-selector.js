@@ -90,7 +90,9 @@ export const uccExample = (state) => {
   textarea += "#jpush配置 金盘\r\n"
   textarea += "jpush.appkey:" + state.jpushAppkey + "\r\n"
   textarea += "jpush.secret:" + state.jpushSecret + "\r\n"
-  textarea += "jpush.production:" + state.jpushProduction + "\r\n"
+  textarea += "jpush.production:" + state.jpushProduction + "\r\n\r\n"
+  textarea += "#启用纯文本\r\n"
+  textarea += "PLAIN_TEXT:" + state.plaintext + "\r\n"
   textarea += "\r\n";
   return textarea
 }

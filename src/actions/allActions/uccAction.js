@@ -65,6 +65,12 @@ const ACTIONS = {
       value
     }
   },
+  handelPlaintext(value){
+    return {
+      type: "UCC_PLAINTEXT",
+      value
+    }
+  },
 }
 
 export default ACTIONS;

@@ -18,6 +18,7 @@ function mapStateToProps(state){
     jpushAppkey: state.ucc.jpushAppkey,
     jpushSecret: state.ucc.jpushSecret,
     jpushProduction: state.ucc.jpushProduction,
+    plaintext: state.ucc.plaintext,
 	}
 }
 
@@ -59,6 +60,9 @@ function mapDispatchToProps(dispatch){
     },
     handelJpushProduction(event){
       dispatch(UCC_ACTIONS.handelJpushProduction(event.target.value))
+    },
+        handelPlaintext(value){
+      dispatch(UCC_ACTIONS.handelPlaintext(value))
     },
 	}
 }
